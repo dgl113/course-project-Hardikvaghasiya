@@ -1,0 +1,105 @@
+/* Styles for the plant finder section, including overall layout adjustments */
+#plant-finder {
+    max-width: 100%; /* Ensures the section does not exceed the width of its container */
+    margin: 2rem auto; /* Centers the section with top and bottom margins */
+    padding: 1rem; /* Adds padding inside the section for spacing */
+}
+
+/* Styles for the heading within the plant finder section */
+#plant-finder h2 {
+    color: #333; /* Dark grey color for the text */
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+/* Styling for the search bar, including alignment and appearance */
+.search-bar {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    margin-bottom: 2rem; /* Adds space below the search bar */
+    background: white; /* White background color */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 0.5rem; /* Padding inside the search bar */
+}
+
+/* Styling for the input field within the search bar */
+.search-input {
+    flex-grow: 1; /* Allows the input to fill the available space */
+    padding: 10px 20px; /* Padding inside the input for spacing */
+    border: none; /* Removes the default border */
+    border-radius: 25px; /* Rounded corners to match the search bar */
+    outline: none; /* Removes the default focus outline */
+    color: #333; /* Dark grey color for the text */
+    font-size: 1rem; /* Sets the font size */
+}
+
+/* Styling for the search button */
+.search-button {
+    padding: 10px; /* Padding inside the button for spacing */
+    border: none; /* Removes the default border */
+    background-color: transparent; /* Makes the background transparent */
+    color: #5cb85c; /* Green color for the button text */
+    cursor: pointer; /* Changes the cursor to indicate clickable */
+    font-size: 1.2rem; /* Slightly larger font size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.search-button:hover {
+    color: #4cae4c; /* Darker green color on hover */
+}
+
+/* Grid layout for displaying plant items */
+.plant-list {
+    display: grid; /* Uses grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Space between grid items */
+}
+
+/* Styles for individual plant items */
+.plant-item {
+    background: #fff; /* White background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hides content that exceeds the boundary */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for movement */
+}
+.plant-item:hover {
+    transform: translateY(-5px); /* Moves item up slightly on hover */
+}
+
+/* Styles for the image inside a plant item */
+.plant-item img {
+    width: 100%; /* Ensures the image covers the full width */
+    height: 150px; /* Sets a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-bottom: 1px solid #ddd; /* Light grey border below the image */
+}
+
+/* Styling for the plant information section within a plant item */
+.plant-info {
+    padding: 0.5rem; /* Padding for spacing inside the info section */
+    text-align: center; /* Centers the text horizontally */
+}
+
+/* Styles for the plant name and details */
+.plant-name {
+    font-size: 1.1em; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark grey text color */
+}
+.plant-details {
+    font-size: 0.9em; /* Smaller font size for details */
+    color: #666; /* Medium grey text color */
+    margin-top: 0.5rem; /* Space above the details */
+}
+
+/* Styling for the footer section */
+footer {
+    margin-top: 4rem; /* Space above the footer */
+    background: #333; /* Dark grey background */
+    color: white; /* White text color */
+    padding: 1rem; /* Padding inside the footer */
+    text-align: center; /* Centers the text horizontally */
+}

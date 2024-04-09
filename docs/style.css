@@ -1,0 +1,606 @@
+/* General styling for the body and html elements, setting margin, padding, and default font */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif
+}
+/* Styling for the contact information section at the top of the page */
+.contact-info {
+  background-color: #77a75b; /* Dark green background color */
+  padding: 20px 100px; /* Vertical and horizontal padding */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Styling for text and links within the contact-info section */
+.contact-info span,
+.contact-info a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline from links */
+    margin-left: 10px; /* Spacing between items */
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow to navbar */
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav items */
+  align-items: center; /* Vertically aligns items in the navbar */
+  padding: 10px 100px; /* Padding inside the navbar */
+}
+
+/* Removes default list styling and sets up flexbox for horizontal layout */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Styling for individual navigation links */
+.navbar li {
+    padding: 0 15px; /* Horizontal padding */
+}
+
+/* Styling for links inside the navbar, making them bold */
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Dark text color for contrast */
+    font-weight: bold;
+}
+
+/* Styling for the logo image within the navbar */
+.logo img {
+  height: 90px; /* Sets the logo height. Adjust width automatically */
+  padding-left: 80px; /* Space to the left of the logo */
+}
+
+/* Hero section styling with background image, text color, and alignment */
+.hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1593069567131-53a0614dde1d?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+}
+
+/* Dark overlay to make the text more readable against the background image */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Styling for the content inside the hero section, placed above the overlay */
+.hero-content {
+    text-align: center;
+    color: #fff; /* White text for contrast */
+    z-index: 2;
+}
+
+/* Specific styles for the title and subtitle in the hero section */
+.hero-title {
+    font-size: 3em; /* Large font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+    animation: fadeInUp 1s ease-in-out; /* Fade in animation */
+}
+
+.hero-subtitle {
+    font-size: 1.5em; /* Medium font size for the subtitle */
+    margin-bottom: 30px; /* Space below the subtitle */
+    animation: fadeInUp 1s ease-in-out 0.5s; /* Fade in animation */
+}
+
+/* Button styling in the hero section */
+.hero-button {
+    display: inline-block;
+    padding: 15px 45px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;/* White text */
+    background-color: #77a75b; /* Matching dark green background */
+    border-radius: 15px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.hero-button:hover {
+    background-color: #2980b9;
+}
+
+/* Styling for sections that follow the hero section */
+.seasonal-section {
+  background-color: rgb(245, 225, 225); /* Light pink background for contrast */
+  text-align: center;
+  padding: 50px 20px; /* Padding around the text */
+  color: #333; /* Dark grey text for readability */
+  font-family: Arial, sans-serif; /* Arial font for a modern look */
+  font-size: 1.2em; /* Slightly larger font size */
+}
+
+/* Styles for paragraphs within the seasonal-section */
+.seasonal-section p {
+  font-size: 20px; /* Slightly larger font size */
+  font-weight: 500; /* Medium font weight */
+  max-width: 800px; /* Maximum width to maintain readability */
+  margin: 0 auto; /* Centers the paragraph */
+  background-color: rgb(245, 225, 225); /* Light pink background */
+  padding: 20px; /* Padding inside the paragraph */
+  border-radius: 0px; /* Optional rounded corners */
+}
+
+/* Container for layout purposes, centers content and provides max width */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box; /* Includes padding in the element's total width and height */
+}
+
+/* Main content area styling, providing space around content */
+.main-content {
+  display: flex;
+  justify-content: space-between; /* Space between main text and sidebar */
+  padding: 120px; /* Padding around the content */
+}
+
+/* Styling for text content within the main content area */
+.text-content {
+  flex: 1; /* Allows the text content to fill the available space */
+  padding-right: 20px; /* Space between the text and the adjacent element */
+}
+.text-content p {
+  font-size: 25px; /* Larger font size for readability */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px; /* Large font size for headings */
+}
+
+/* Styling for a card-like section for Facebook information */
+.facebook-section {
+    padding: 20px;
+    background-color: #f7f7f7; /* Light grey background for the card */
+    display: flex;
+    justify-content: center;
+}
+
+.facebook-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+  width: 300px; /* Fixed width for consistency */
+}
+
+/* Ensures the image fills the card width and maintains aspect ratio */
+.facebook-card-image {
+    width: 100%;
+    display: block;
+}
+
+/* Styling for the text information within the Facebook card */
+.facebook-card-info {
+  padding: 10px; /* Padding around the text */
+  text-align: center; /* Centers the text */
+}
+
+/* Bold and margin styling for the card title */
+.facebook-card-title {
+  margin: 10px 0; /* Space above and below the title */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Styling for follower count to differentiate from other text */
+.facebook-card-followers {
+  color: #666; /* Dark grey for subtlety */
+  margin: 10px 0; /* Space above and below */
+}
+
+/* Container for action buttons, providing margin for separation */
+.facebook-card-actions {
+  margin: 20px 0; /* Space above and below the buttons */
+}
+
+/* Styling for action buttons with Facebook blue as default */
+.facebook-action-button {
+  display: inline-block; /* Allows for margin and padding */
+  margin: 0 5px; /* Space between buttons */
+  padding: 5px 15px; /* Padding inside the buttons */
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* White text for contrast */
+  background-color: #4267B2; /* Facebook blue */
+  border-radius: 4px; /* Rounded corners */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Color variations for specific actions, green for "follow" */
+.facebook-action-button.follow {
+  background-color: #4CAF50; /* Green */
+}
+
+/* Darker color for "learn more" button for differentiation */
+.facebook-action-button.learn-more {
+  background-color: #1C1C1C; /* Dark grey */
+}
+
+/* Subtle hover effect for buttons */
+.facebook-action-button:hover {
+  opacity: 0.9; /* Slightly transparent on hover */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .facebook-section {
+        padding: 20px;
+    }
+}
+
+
+.learn-more-btn {
+    background-color: #34A853;
+}
+
+.follow-btn:hover {
+    background-color: #365899;
+}
+
+.learn-more-btn:hover {
+    background-color: #2C7A45;
+}
+/* Apply these styles in your CSS file or inside a <style> tag in the <head> */
+.split-layout {
+    display: flex;
+    background-color: rgb(245, 225, 225) ;
+    align-items: center;
+    min-height: 10vh; /* Adjust based on your content and design preference */
+}
+
+.image-side {
+    flex: 1;
+    /* No longer need the background styles here */
+}
+
+.image-side-img {
+    width: 100%;
+    height: auto; /* This will ensure the image scales properly and maintains its aspect ratio */
+    display: block; /* Remove any default inline spacing */
+}
+
+.content-side {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* This will center the content horizontally */
+    padding: 2rem; /* Adjust the padding as needed */
+    text-align: center; /* This will center the text inside the content side */
+}
+
+.text-contents h2 {
+    font-size: 45px;
+    margin-bottom: 1rem; /* Space between the h2 and paragraph */
+}
+
+.text-contents p {
+    font-size: 25px;
+    margin-bottom: 2rem; /* Space between the paragraph and button */
+}
+
+.btn-view-gallery {
+    padding: 20px 30px;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px; /* Rounded corners for the button */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text for the button */
+    transition: background-color 0.3s ease;
+    /* Center the button horizontally */
+    display: inline-block; /* Allows for padding and margin */
+}
+
+.site-footer {
+    background-color: #77a75b; /* Replace with the actual color you want */
+    color: white;
+    padding: 10px 100px; /* Adjust the padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-link {
+    color: red; /* Color of the website link */
+    font-size: 1.5em; /* Adjust the font size as needed */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white; /* Replace with the actual color */
+    margin-left: 20px; /* Space between icons */
+    font-size: 1.5em; /* Adjust the font size as needed */
+}   
+
+/* chatbot css*/
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #E3F2FD;
+}
+.chatbot-toggler {
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #724ae8;
+  transition: all 0.2s ease;
+}
+body.show-chatbot .chatbot-toggler {
+  transform: rotate(90deg);
+}
+.chatbot-toggler span {
+  color: #fff;
+  position: absolute;
+}
+.chatbot-toggler span:last-child,
+body.show-chatbot .chatbot-toggler span:first-child  {
+  opacity: 0;
+}
+body.show-chatbot .chatbot-toggler span:last-child {
+  opacity: 1;
+}
+.chatbot {
+  position: fixed;
+  right: 35px;
+  bottom: 90px;
+  width: 420px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.5);
+  transform-origin: bottom right;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+  transition: all 0.1s ease;
+}
+body.show-chatbot .chatbot {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+.chatbot header {
+  padding: 16px 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: #724ae8;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.chatbot header span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+header h2 {
+  font-size: 1.4rem;
+}
+.chatbot .chatbox {
+  overflow-y: auto;
+  height: 510px;
+  padding: 30px 20px 100px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+  width: 6px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 25px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+.chatbox .chat {
+  display: flex;
+  list-style: none;
+}
+.chatbox .outgoing {
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+.chatbox .incoming span {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  cursor: default;
+  text-align: center;
+  line-height: 32px;
+  align-self: flex-end;
+  background: #724ae8;
+  border-radius: 4px;
+  margin: 0 10px 7px 0;
+}
+.chatbox .chat p {
+  white-space: pre-wrap;
+  padding: 12px 16px;
+  border-radius: 10px 10px 0 10px;
+  max-width: 75%;
+  color: #fff;
+  font-size: 0.95rem;
+  background: #724ae8;
+}
+.chatbox .incoming p {
+  border-radius: 10px 10px 10px 0;
+}
+.chatbox .chat p.error {
+  color: #721c24;
+  background: #f8d7da;
+}
+.chatbox .incoming p {
+  color: #000;
+  background: #f2f2f2;
+}
+.chatbot .chat-input {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 3px 20px;
+  border-top: 1px solid #ddd;
+}
+.chat-input textarea {
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  max-height: 180px;
+  padding: 15px 15px 15px 0;
+  font-size: 0.95rem;
+}
+.chat-input span {
+  align-self: flex-end;
+  color: #724ae8;
+  cursor: pointer;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  font-size: 1.35rem;
+}
+.chat-input textarea:valid ~ span {
+  visibility: visible;
+}
+
+@media (max-width: 490px) {
+  .chatbot-toggler {
+    right: 20px;
+    bottom: 20px;
+  }
+  .chatbot {
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    border-radius: 0;
+    width: 100%;
+  }
+  .chatbot .chatbox {
+    height: 90%;
+    padding: 25px 15px 100px;
+  }
+  .chatbot .chat-input {
+    padding: 5px 15px;
+  }
+  .chatbot header span {
+    display: block;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .split-layout {
+        flex-direction: column;
+    }
+
+    .content-side {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .image-side, .content-side {
+        width: 100%;
+    }
+}
+
+
+.btn-view-gallery:hover {
+    background-color: #367B37; /* Slightly darker green on hover */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .split-layout {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .image-side, .content-side {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .content-side {
+        padding: 1rem;
+    }
+}
+
+
+/* Additional responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .facebook-section {
+        margin-top: 20px;
+    }
+
+    .facebook-profile {
+        max-width: none;
+    }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

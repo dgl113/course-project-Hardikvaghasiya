@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- The document type declaration, defining the document as HTML5 -->
+<html lang="en">
+<!-- The root element with language set to English -->
+
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Contains meta information, title, and links to external resources -->
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper scaling and rendering on all devices -->
+    <title>Document</title>
+    <!-- The title of the document shown in the browser's title or tab -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to an external CSS file for general styling -->
+    <script src="plants.js"></script>
+    <!-- Link to an external JavaScript file for functionality related to plants -->
+    <link rel="stylesheet" href="plants.css">
+    <!-- Link to an external CSS file specifically for styling plant-related elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Link to Font Awesome for access to icons -->
+</head>
+
+<body>
+    <!-- Contains the visible content of the document -->
+    <header>
+        <!-- Header section typically contains introductory content or navigation links -->
+        <div class="contact-info">
+            <!-- Div for contact information -->
+            <span>(250) 594-1117</span>
+            <!-- Span for a phone number -->
+            <a href="mailto:ken-dor@shaw.ca">ken-dor@shaw.ca</a>
+            <!-- Mailto link for email -->
+            <a href="http://facebook.com" target="_blank">Facebook</a>
+            <!-- Link to Facebook page -->
+            <a href="http://instagram.com" target="_blank">Instagram</a>
+            <!-- Link to Instagram page -->
+        </div>
+        <nav class="navbar">
+            <!-- Navigation bar -->
+            <div class="logo">
+                <!-- Logo container -->
+                <img src="images/logo.jpg" alt="Ken-Dor Garden Center">
+                <!-- Image element for the logo -->
+            </div>
+            <ul>
+                <!-- Unordered list for navigation links -->
+                <li><a href="index.html">Home</a></li>
+                <!-- Navigation link to the home page -->
+                <li><a href="plants.html">Plants</a></li>
+                <!-- Navigation link to the plants page -->
+                <li><a href="feedback.html">Feedback</a></li>
+                <!-- Navigation link to the feedback page -->
+            </ul>
+        </nav>
+    </header>
+    <section id="plant-finder">
+        <!-- Section dedicated to the plant finder feature -->
+        <h2>Interactive Plant Finder Tool</h2>
+        <!-- Heading for the plant finder tool -->
+        <div class="search-bar">
+            <!-- Search bar container -->
+            <input type="text" id="search" class="search-input" placeholder="Search for plants...">
+            <!-- Text input for searching plants -->
+            <button class="search-button" onclick="filterPlants()">
+                <!-- Button to trigger plant search -->
+                <i class="fas fa-search"></i>
+                <!-- Search icon from Font Awesome -->
+            </button>
+        </div>
+        <div id="plant-list" class="plant-list">
+            <!-- Container where searched plants will be displayed -->
+            <!-- Plant items will be inserted here by JavaScript -->
+        </div>
+    </section>
+    
+    <div class="split-layout">
+        <!-- A layout division showing image and text side by side -->
+        <div class="image-side">
+            <!-- Container for the image -->
+            <img src="https://images.unsplash.com/photo-1495106245177-55dc6f43e83f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" class="image-side-img">
+            <!-- The image itself -->
+        </div>
+        <div class="content-side">
+            <!-- Container for the text content next to the image -->
+            <div class="text-contents">
+                <!-- Container for text contents -->
+                <h2>Did You Like it</h2>
+                <!-- Heading for the section -->
+                <p>Please give us review that how can we improve</p>
+                <!-- Paragraph describing the action to take -->
+                <a href="feedback.html" target="_blank" class="btn-view-gallery">Give us Feedback</a>
+                <!-- Button/link to view the gallery -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<footer class="site-footer">
+    <!-- Footer section of the document -->
+    <div class="footer-content">
+        <!-- Container for footer content -->
+        <a href="http://websites.ca" class="footer-link">websites.ca</a>
+        <!-- Link to a website -->
+        <div class="social-links">
+            <!-- Container for social media links -->
+            <!-- Font Awesome icons for each social media platform -->
+            <a href="http://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="http://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="fab fa-canadian-maple-leaf"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="fas fas fa-check-circle"></i></a>
+        </div>
+    </div>
+</footer>
+</html>

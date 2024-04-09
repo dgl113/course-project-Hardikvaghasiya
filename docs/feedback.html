@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- Specifies the document type and version of HTML -->
+<html lang="en">
+<!-- Sets the language of the document's content to English -->
+
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Metadata, scripts, and links to external resources -->
+    <meta charset="UTF-8">
+    <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the site is responsive and scales correctly on different devices -->
+    <title>Document</title>
+    <!-- The title of the document shown in the browser's title bar or tab -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="feedback.css">
+    <!-- Link to a stylesheet specifically for feedback styles -->
+    <script src="feedback.js"></script>
+    <!-- Link to a JavaScript file for handling feedback form functionality -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Link to Font Awesome for icons -->
+</head>
+
+<body>
+    <!-- Contains the content of the document -->
+    <header>
+        <!-- Header section of the page -->
+        <div class="contact-info">
+            <!-- Container for contact information -->
+            <span>(250) 594-1117</span>
+            <!-- Phone number -->
+            <a href="mailto:ken-dor@shaw.ca">ken-dor@shaw.ca</a>
+            <!-- Email address -->
+            <a href="http://facebook.com" target="_blank">Facebook</a>
+            <!-- Link to Facebook page -->
+            <a href="http://instagram.com" target="_blank">Instagram</a>
+            <!-- Link to Instagram page -->
+        </div>
+        <nav class="navbar">
+            <!-- Navigation bar -->
+            <div class="logo">
+                <!-- Logo container -->
+                <img src="images/logo.jpg" alt="Ken-Dor Garden Center">
+                <!-- Logo image -->
+            </div>
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner-sections">
+        <!-- Banner section with image and overlay text -->
+        <img src="https://images.unsplash.com/photo-1493673272479-a20888bcee10?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Banner Image" class="banner-images">
+        <!-- Banner image -->
+        <div class="banner-text">
+            <!-- Text overlaying the banner image -->
+            <h1>Customer Feedback and Rating System</h1>
+        </div>
+    </div>
+    
+    <!-- Feedback Form Container -->
+    <div class="feedback-form-container">
+        <form id="feedbackForm" class="feedback-form">
+            <h2>Leave a Review</h2>
+            <!-- Sections for inputting name, selecting a rating, and leaving feedback -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <!-- Options for rating with stars visual representation -->
+                    <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; 5 Stars</option>
+                    <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; 4 Stars</option>
+                    <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; 3 Stars</option>
+                    <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; 2 Stars</option>
+                    <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; 1 Star</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Leave Feedback</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Review</button>
+            <!-- Button to submit the review -->
+        </form>
+    </div>
+
+    <!-- Testimonials Container -->
+    <div class="testimonials-container">
+        <h2>Customer Testimonials</h2>
+        <!-- Container for displaying testimonials -->
+        <div id="testimonialsDisplay" class="testimonials-display"></div>
+        <!-- Testimonials will be dynamically inserted here -->
+    </div>
+    <div class="split-layout">
+        <!-- Split layout for additional content, like a gallery link -->
+        <div class="image-side">
+            <!-- Side for the image -->
+            <img src="https://images.unsplash.com/photo-1637036757916-9f712d852682?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" class="image-side-img">
+        </div>
+        <div class="content-side">
+            <!-- Side for the text content -->
+            <div class="text-contents">
+                <h2>OUR SELECTION</h2>
+                <p>Visit our gallery page to see some examples of what we carry.</p>
+                <a href="link-to-gallery.html" class="btn-view-gallery">VIEW GALLERY</a>
+                <!-- Call to action button -->
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="site-footer">
+    <!-- Footer of the page -->
+    <div class="footer-content">
+        <a href="http://websites.ca" class="footer-link">websites.ca</a>
+        <!-- Link to the website -->
+        <div class="social-links">
+            <!-- Social media links -->
+            <a href="http://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="http://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="fab fa-canadian-maple-leaf"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="fas fas fa-check-circle"></i></a>
+        </div>
+    </div>
+</footer>
+
+</html>
