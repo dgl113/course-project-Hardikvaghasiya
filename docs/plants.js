@@ -41,7 +41,6 @@ function filterPlants() {
     displayPlants(filteredPlants);
 }
 
-
 // Function to display plants in the HTML document
 function displayPlants(plantArray) {
     // Gets the container element where plants will be displayed
